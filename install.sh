@@ -24,4 +24,4 @@ cd ../..
 
 rm -rf tmp
 echo "Done"
-
+shutdown -h now
