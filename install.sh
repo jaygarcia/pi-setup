@@ -35,4 +35,4 @@ cd network-rgb-matrix-display/server
 ./mkbuild.sh
 
 echo "Done"
-shutdown -h now
+#shutdown -h now
