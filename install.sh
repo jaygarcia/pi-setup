@@ -27,5 +27,12 @@ cd cmake-3.15.1
 cd ../..
 
 rm -rf tmp
+
+# RGB Matrix server stuff. TODO: Move to ModusCreateOrg
+git clone https://github.com/jaygarcia/network-rgb-matrix-display.git
+
+cd network-rgb-matrix-display/server
+./mkbuild.sh
+
 echo "Done"
 shutdown -h now
