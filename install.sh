@@ -1,6 +1,8 @@
 
 ## Install core libs
 apt-get update -y
+apt-get upgrade -y
+apt-get dist-upgrade -y
 apt-get install g++ vim make libsdl2-dev libsdl2-image-dev rsync git -y
 
 mkdir -p tmp
