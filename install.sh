@@ -17,13 +17,13 @@ wget -c https://github.com/Kitware/CMake/releases/download/v3.15.1/cmake-3.15.1.
 echo "Compiling Boost..."
 cd boost_1_70_0/
 ./bootstrap.sh
-./b2 --with-iostreams --with-thread --with-headers threading=multi install
+./b2 -j4 --with-iostreams --with-thread --with-headers threading=multi install
 
 cd ..
 
 cd cmake-3.15.1 
 ./configure
-./make -j 4 install
+make -j 4 install
 cd ../..
 
 rm -rf tmp
